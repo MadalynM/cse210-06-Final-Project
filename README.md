@@ -1,6 +1,7 @@
 # cse210-06-Final-Project
 
 # Flag
+Flag is a game where a player dodges obstacles like rock and snakes to make it to the flag on the otherside. The player looses points whe hit by obstacles and dies when hit by a snake. The player wins when they reach the flag.
 
 ## Getting Started
 ---
