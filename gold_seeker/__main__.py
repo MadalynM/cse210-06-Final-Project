@@ -1,3 +1,4 @@
+
 import constants
 
 
@@ -35,15 +36,15 @@ def main():
     cast.add_actor("fourth snake", Snake())
     cast.add_actor("scores", Score())
     cast.add_actor("rocks", Rock().createRock())
-
-
-    
-
-    
-     
-    
-
-    
+    cast.add_actor("second rock", Rock().createRock())
+    cast.add_actor("third rock", Rock().createRock())
+    cast.add_actor("fourth rock", Rock().createRock())
+    cast.add_actor("fifth rock", Rock().createRock())
+    cast.add_actor("sixth rock", Rock().createRock())
+    cast.add_actor("seventh rock", Rock().createRock())
+    cast.add_actor("eighth rock", Rock().createRock())
+    cast.add_actor("ninth rock", Rock().createRock())
+    cast.add_actor("tenth rock", Rock().createRock())
    
     # start the game
     keyboard_service = KeyboardService()

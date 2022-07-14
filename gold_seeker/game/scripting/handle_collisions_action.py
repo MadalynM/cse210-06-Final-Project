@@ -69,6 +69,15 @@ class HandleCollisionsAction(Action):
         player = cast.get_first_actor("player")
 
         rocks = cast.get_first_actor("rocks")
+        rock_two = cast.get_first_actor("second rock")
+        rock_three = cast.get_first_actor("third rock")
+        rock_four = cast.get_first_actor("fourth rock")
+        rock_five = cast.get_first_actor("fifth rock")
+        rock_six = cast.get_first_actor("sixth rock")
+        rock_seven = cast.get_first_actor("seventh rock")
+        rock_eight = cast.get_first_actor("eighth rock")
+        rock_nine = cast.get_first_actor("ninth rock")
+        rock_ten = cast.get_first_actor("tenth rock")
         
         for segment in segments:
             if player.get_position().equals(segment.get_position()):
@@ -88,6 +97,33 @@ class HandleCollisionsAction(Action):
         
         if player.get_position().equals(rocks.get_position()):
             score.reset_points(0)
+
+        if player.get_position().equals(rock_two.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_three.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_four.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_five.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_six.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_seven.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_eight.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_nine.get_position()):
+            score.reset_points(0)
+
+        if player.get_position().equals(rock_ten.get_position()):
+            score.reset_points(0)
         
     def _handle_game_over(self, cast):
         """Shows the 'game over' message and turns the snake and gold white if the game is over.
@@ -98,7 +134,24 @@ class HandleCollisionsAction(Action):
         if self._is_game_over:
             snake = cast.get_first_actor("snakes")
             segments = snake.get_segments()
+            second_snake = cast.get_first_actor("second snake")
+            third_snake = cast.get_first_actor("third snake")
+            fourth_snake = cast.get_first_actor("fourth snake")
+            segments = snake.get_segments()
+            second_segments = second_snake.get_second_snake_segments()
+            third_segments = third_snake.get_third_snake_segments()
+            fourth_segments = fourth_snake.get_fourth_snake_segments()
             gold = cast.get_first_actor("gold")
+            rocks = cast.get_first_actor("rocks")
+            rock_two = cast.get_first_actor("second rock")
+            rock_three = cast.get_first_actor("third rock")
+            rock_four = cast.get_first_actor("fourth rock")
+            rock_five = cast.get_first_actor("fifth rock")
+            rock_six = cast.get_first_actor("sixth rock")
+            rock_seven = cast.get_first_actor("seventh rock")
+            rock_eight = cast.get_first_actor("eighth rock")
+            rock_nine = cast.get_first_actor("ninth rock")
+            rock_ten = cast.get_first_actor("tenth rock")
 
             x = int(constants.MAX_X / 2)
             y = int(constants.MAX_Y / 2)
@@ -111,4 +164,28 @@ class HandleCollisionsAction(Action):
 
             for segment in segments:
                 segment.set_color(constants.WHITE)
+
             gold.set_color(constants.WHITE)
+            second_snake.set_color(constants.WHITE)
+            third_snake.set_color(constants.WHITE)
+            fourth_snake.set_color(constants.WHITE)
+
+            for segment in second_segments:
+                segment.set_color(constants.WHITE)
+
+            for segment in third_segments:
+                segment.set_color(constants.WHITE)
+
+            for segment in fourth_segments:
+                segment.set_color(constants.WHITE)
+
+            rocks.set_color(constants.WHITE)
+            rock_two.set_color(constants.WHITE)
+            rock_three.set_color(constants.WHITE)
+            rock_four.set_color(constants.WHITE)
+            rock_five.set_color(constants.WHITE)
+            rock_six.set_color(constants.WHITE)
+            rock_seven.set_color(constants.WHITE)
+            rock_eight.set_color(constants.WHITE)
+            rock_nine.set_color(constants.WHITE)
+            rock_ten.set_color(constants.WHITE)
