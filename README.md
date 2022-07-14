@@ -1,7 +1,7 @@
 # cse210-06-Final-Project
 
 # Gold Seeker
-Gold Seeker is a game where the player (#) searches for gold (@). The player dodges obstacles like snakes and rocks. The rocks will subtract a point when the player is hit by them and the snakes will end the game. The player gains points by getting gold. 
+Gold Seeker is a game where the player (#) searches for gold (@). The player dodges obstacles like snakes and rocks. The rocks will reset the players points when the player is hit by them and the snakes will end the game. The player gains points by getting gold. 
 
 ## Getting Started
 ---
